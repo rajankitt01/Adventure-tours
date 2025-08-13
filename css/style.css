@@ -1,0 +1,45 @@
+body{
+	
+}
+
+#container{
+	height: 350px;
+	width: 1250px;
+	background-color: whitesmoke;
+	margin-top: 200px;
+	margin-left: 100px;
+	border:1px solid black;
+}
+
+
+#first{
+	height: 350px;
+	width: 420px;
+	float: left;
+	background-color: darkblue;
+}
+#logo{
+	 height:70px;
+	 width:110px;
+	 float: right;
+}
+#second{
+	height: 350px;
+	width: 420px;
+	color: orange;
+	float: left;
+	background-color: darkblue;
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+#email{
+	color: whitesmoke;
+}
+
+
+#third{
+	height: 350px;
+	width: 410px;
+	float: right;
+	background-color: darkblue;
+}

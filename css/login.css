@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;   /* for box size */
+	font-family: sans-serif;  /*font style*/
+}
+body{
+	width: 100vw;
+	height: 100vh;
+
+
+	background-image: url(images/spider.jpg);
+	background-position: center;
+	background-size: cover;
+
+
+	display: flex;
+	align-items: center;            /*align all the items in center*/
+	justify-content: center;   /*align centent in center*/
+}
+.container{
+	height: 500px;
+	width: 400px;
+
+
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;         /* by using this contents are usually in row form */
+	justify-content: center;   /* by using this contents are usually in row form */
+	flex-direction: column;       /*directing  contents in column form*/
+}
+h2{
+	color: white;
+	text-transform: uppercase;    /*text will be transormed into UPPERCASE*/
+	padding: 20px 0;    
+	font-size: 2em;
+}
+.form-group
+{
+	position: relative;
+	width: 330px;
+	border-bottom: 3px solid white;
+	margin: 30px 0;       /*30px from upper and 0 from left and right*/
+}
+
+.form-group input
+{
+	width: 100%;
+	height: 50px;
+	background-color: transparent; /*it will help to adapt the color provided to the related class*/
+	border:none;       /*removing the border line of inputed items*/
+
+
+	font-size: 1.2em;
+	color: whitesmoke;   /*the input text in email or password will be displayed white*/
+	padding: 0 30px 0 10px;
+
+}
+
+.form-group label{
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%); /*transfrom technique to fit items as per required position*/
+	font-size: 1.2em;
+	color: whitesmoke;
+	transition: 0.5s;
+}
+
+input:focus ~ label,  /*this full line of code use for input to move existed text to uppward when we enter our email and password*/
+input:valid ~ label
+{
+	top: -5px;
+	border: none;
+}
+
+.form-group i{
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);       /*transfrom technique to fit items as per required position*/
+	color: whitesmoke;
+	font-size: 1.2em;
+
+}
+p
+{
+	text-align: center;
+	color: whitesmoke;
+	padding: 10px 0;     
+}
+p>a      /*selecting <a> tag in <p> tag*/
+{
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight: bolder;
+
+}
+p>a:hover                   /*hover used to provide more effective style*/
+{
+	text-decoration: underline;
+	font-style: italic;
+}
+#btn{
+	width: 100%;
+	height: 50px;
+	border-radius: 40px;    /*used to make button looks round*/
+	border: none;           /*removing the border of button*/
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight:600;
+	margin: 10px 0;
+	transition: 0.5s;   /*interval of transition to look smooth*/
+}
+
+#btn:hover
+{
+	background: rgba(0, 0, 0, 0.3);      /*after placing cursor backgound will be changed*/
+	color: whitesmoke;
+	cursor: pointer;    /*cursor will be shown as pointer on placing on button*/
+
+}
